@@ -2,7 +2,7 @@
 
 Visual Studio is bloated. I just want to have a minimal project template where I can make quick C++ programs meant for the Windows system.
 
-This is a simple starter template project that uses Windows MSVC 2022 compiler and using the the standalone windows `[NMAKE][1]` utility. This template project also is meant to be used with VS code. Debugging is supported.
+This is a simple starter template project that uses Windows MSVC 2022 compiler and using the the standalone windows [NMAKE][1] utility. This template project also is meant to be used with VS code. Debugging is supported.
 
 ## Makefile
 
@@ -15,6 +15,9 @@ Once the VS Studio CLI SDK is installed, simply run `nmake /NOLOGO all` in the p
 
 ### Maybe todo
 - Add library support
+- Fix Nmake `fatal error U1077`
 
+### fatal error U1077
+This error is caused by the `bin` folder not existing. Simply create a `bin` folder in the root directory to resolve. 
 
 [1]:https://docs.microsoft.com/en-us/cpp/build/reference/nmake-reference?view=msvc-170
